@@ -29,8 +29,7 @@ var gameTextColor = clc.cyanBright;
 var userGuessedCorrectly = false;
 
 //Our word bank - predefined list of words to choose from. 
-var wordList = ["burnsville", "duluth", "brainerd", "minneapolis", "lakeville", "blaine", "eagan", "minnetonka", "bloomington", "mankato", "edina", "bemidji", "shakopee", "chanhassen", "owatonna"];
-
+var wordList = ["The Offspring", "Ignition", "Smash", "Ixnay on the Hombre", "Americana", "Conspiracy of One", "Splinter", "Rise and Fall Rage and Grace"]
 //Choose random word from wordList.
 var randomWord;
 var someWord;
@@ -61,7 +60,7 @@ figlet("Hangman Game", function(err, data) {
     console.log(data)
     //Welcome screen text.
     console.log(gameTextColor("Welcome to the Hangman Game!"));
-    console.log(gameTextColor("Theme is... Minnesota cities."));
+    console.log(gameTextColor("Theme is... Albums by the Offspring."));
     //Game instructions.
     var howToPlay = 
     "==========================================================================================================" + "\r\n" +
@@ -124,7 +123,7 @@ function startGame(){
 	lettersAlreadyGuessedListArray = [];
 }
 
-//Function to choose a random word from the list of cities in the word bank array.
+//Function to choose a random word from the list of albums in the word bank array.
 function chooseRandomWord() {
 //Randomly generate word from wordList array.
 randomWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
@@ -233,7 +232,7 @@ function checkIfUserWon() {
 	if (guessesRemaining === 0) {
 		console.log(gameTextColor("====================================================================="));
 		console.log(incorrect('YOU LOST. BETTER LUCK NEXT TIME.'));
-		console.log(gameTextColor("The correct city was: " + randomWord));
+		console.log(gameTextColor("The correct album was: " + randomWord));
 		//Increment loss counter by 1.
 		losses++;
 		//Display wins and losses totals.
