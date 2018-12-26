@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philipstubbs13/constructor-hangman.git"
+    "url": "https://github.com/thoneywill3/Constructor-Word-Guess.git"
   },
-  "author": "Phil Stubbs",
+  "author": "Thomas Honeywill",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/philipstubbs13/constructor-hangman/issues"
+    "url": "https://github.com/thoneywill3/Constructor-Word-Guess.git"
   },
-  "homepage": "https://github.com/philipstubbs13/constructor-hangman#readme",
+  "homepage": "https://github.com/thoneywill3/Constructor-Word-Guess.git",
   "dependencies": {
     "boxen": "^1.3.0",
     "cli-color": "^1.4.0",
